@@ -46,12 +46,26 @@ function MyInfo() {
 
 /* Objective 3
 1. Setup the react app from scratch.
-2. Render an App Component defined in a seperate file
-3. Inside App, render:
+2. Render an ObjectivesApp Component defined in a seperate file
+3. Inside ObjectivesApp, render:
   a. a Navbar component
   b. a MainContent component
   c. a Footer component
+
+  import React from "react";
+  import ReactDOM from "react-dom";
+  import ObjectivesApp from "./objectives/ObjectivesApp"
+  
+  ReactDOM.render(<ObjectivesApp />, document.getElementById('root'));
+  */
+
+/* Todo App Part 1:
+1. Setup the react app from scratch
+2. Render an App Component
+3. Create the App component from scratch
+4. Have the <App /> component render 3 or 4 checkBoxes with paragraphs or spams next to it like you're making a todo list with some hard-coded items on it
 */
+
 import React from "react";
 import ReactDOM from "react-dom";
 
