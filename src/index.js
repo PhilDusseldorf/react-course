@@ -64,7 +64,6 @@ function MyInfo() {
 2. Render an App Component
 3. Create the App component from scratch
 4. Have the <App /> component render 3 or 4 checkBoxes with paragraphs or spams next to it like you're making a todo list with some hard-coded items on it
-*/
 
 import React from "react";
 import ReactDOM from "react-dom";
@@ -72,3 +71,19 @@ import ReactDOM from "react-dom";
 import App from "./App";
 
 ReactDOM.render(<App />, document.getElementById('root'));
+*/
+
+/* Objective 4: PROPS
+1. Setup the react app from scratch.
+2. Render an ObjectivesApp Component defined in a seperate file
+3. Inside ObjectivesApp, render 4 <Joke /> components
+  a. each Joke has a "question" and a "punchline" property
+4. Handle jokes that only deliver a punchline. Do not show empty questions
+ */
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+import ObjectivesApp from "./objectives/ObjectivesApp";
+
+ReactDOM.render(<ObjectivesApp />, document.getElementById('root'));
