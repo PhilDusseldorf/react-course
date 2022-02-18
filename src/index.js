@@ -79,11 +79,19 @@ ReactDOM.render(<App />, document.getElementById('root'));
 3. Inside ObjectivesApp, render 4 <Joke /> components
   a. each Joke has a "question" and a "punchline" property
 4. Handle jokes that only deliver a punchline. Do not show empty questions
- */
+*/
 
+/* */
 import React from "react";
 import ReactDOM from "react-dom";
 
 import ObjectivesApp from "./objectives/ObjectivesApp";
 
 ReactDOM.render(<ObjectivesApp />, document.getElementById('root'));
+
+/* Objective 5: MAPPING
+Use standard index.js with the ObjectivesApp above
+1. Create a productsData.js with products / do not forget a key
+2. Create a <Produkt /> component
+3. Render all components to the screen / use the ".map()" method 
+*/

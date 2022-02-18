@@ -21,24 +21,43 @@ function ObjectivesApp() {
 */
 
 /* Objective 4 PROPS
-*/
 
 import React from "react";
 
 import Joke from "./Joke";
 
 function ObjectivesApp() {
-
+    
     let i = 0;
-
+    
     const questionArray = ["What gets taste from a bag and can be worn?", "Why so serious?", "What is white and hides behind a tree?"];
     const punchlineArray = ["A Tea-Shirt!", "The Joker", "A shy milk!", "It's hard to explain jokes to cleptomaniacs as they always take things literally."]
+    
+    return (
+        <div>
+        {
+            punchlineArray.map(e => < Joke question={questionArray[i]} punchline={punchlineArray[i++]} />)
+        }
+        </div>
+        )
+    }
+    
+    export default ObjectivesApp;
+*/
+
+/* Objective 5 MAPPING
+ */
+import React from "react";
+import Product from "./Product";
+import productsData from "./productsData.js";
+
+function ObjectivesApp() {
+
+    const productComponents = productsData.map(item => <Product key={item.id} myName={item.name} description={item.description} price={item.price} />)
 
     return (
         <div>
-            {
-                punchlineArray.map(e => < Joke question={questionArray[i]} punchline={punchlineArray[i++]} />)
-            }
+            {productComponents}
         </div>
     )
 }
