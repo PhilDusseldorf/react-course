@@ -81,13 +81,14 @@ ReactDOM.render(<App />, document.getElementById('root'));
 4. Handle jokes that only deliver a punchline. Do not show empty questions
 */
 
-/* */
+/* 
 import React from "react";
 import ReactDOM from "react-dom";
 
 import ObjectivesApp from "./objectives/ObjectivesApp";
 
 ReactDOM.render(<ObjectivesApp />, document.getElementById('root'));
+*/
 
 /* Objective 5: MAPPING
 Use standard index.js with the ObjectivesApp above
@@ -95,3 +96,17 @@ Use standard index.js with the ObjectivesApp above
 2. Create a <Produkt /> component
 3. Render all components to the screen / use the ".map()" method 
 */
+
+/* Todo App Part 3:
+1. import a JS-data-file to the App
+2. use the .map() method to get the data
+3. refactor the <Todo /> component to use the props from the data file
+3. render the data to the screen
+
+*/
+import React from "react";
+import ReactDOM from "react-dom";
+
+import App from "./App";
+
+ReactDOM.render(<App />, document.getElementById('root'));
