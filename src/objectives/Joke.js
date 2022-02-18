@@ -2,11 +2,6 @@ import React from "react";
 
 function Joke(params) {
 
-    function Question() {
-        return (params.question ? params.question : '');
-
-    }
-
     return (
         <div style={{ fontFamily: "Arial, Helvetica, sans-serif" }}>
             <p style={{ display: !params.question && "none" }}>
