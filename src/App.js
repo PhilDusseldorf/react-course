@@ -86,17 +86,25 @@ import React, { Component } from "react";
 
 import TodoItem from "./components/TodoItem";
 import todoData from "./components/todoData.js";
+import "./App.css";
 
 class App extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            todos: todoData
+        }
+    }
     
     render() {
-        const todoArray = todoData.map(data => <TodoItem key={data.id} item={data} />);
-        
+        const todoArray = this.state.todos.map(data => <TodoItem key={data.id} item={data} />);
+
         return (
-            <div>
+            <div className="d-flex">
                 {todoArray}
             </div>
-        );
+        )
     }
 }
 
