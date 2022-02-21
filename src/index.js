@@ -104,9 +104,17 @@ Use standard index.js with the ObjectivesApp above
 3. render the data to the screen
 
 */
+
+/* Objective 6: STATE
+1. make an ObjectivesApp class with a constructor
+2. repair another funcion and make it into a class
+ */
+
 import React from "react";
 import ReactDOM from "react-dom";
 
-import App from "./App";
+//import App from "./App";
+//ReactDOM.render(<App />, document.getElementById('root'));
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import ObjectivesApp from "./objectives/ObjectivesApp"
+ReactDOM.render(<ObjectivesApp />, document.getElementById('root'));

@@ -46,7 +46,6 @@ function ObjectivesApp() {
 */
 
 /* Objective 5 MAPPING
- */
 import React from "react";
 import Product from "./Product";
 import productsData from "./productsData.js";
@@ -60,6 +59,57 @@ function ObjectivesApp() {
             {productComponents}
         </div>
     )
+}
+
+export default ObjectivesApp;
+ */
+
+ // Objective 6 STATE
+ /* First Task:
+import React, {Component} from "react";
+
+class ObjectivesApp extends Component {
+
+    constructor() {
+        super();
+        this.state = {
+            name: "Phil",
+            age: "36"
+        }
+    }
+    
+    render() {
+        return(
+            <div>
+                <h1>{this.state.name}</h1>
+                <h3>{this.state.age} years old</h3>
+            </div>
+        );
+    }
+}
+
+export default ObjectivesApp;
+  */
+
+/* Second Task: Ix it and make it work
+ */
+import React, {Component} from "react";
+
+class ObjectivesApp extends Component {
+    constructor() {
+        super();
+        this.state = {
+            isLoggedIn: true
+        }
+    }
+
+    render() {
+        return (
+         <div>
+            <h1>You are currently logged {this.state.isLoggedIn ? "in" : "out"}</h1>
+        </div>
+        )
+    }
 }
 
 export default ObjectivesApp;
