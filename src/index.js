@@ -124,11 +124,15 @@ Use standard index.js with the ObjectivesApp above
 
 */
 
+/* Todo App Part 7: CONDITIONAL RENDERING
+1. make the todos change style when complete or incomplete
+ */
+
 import React from "react";
 import ReactDOM from "react-dom";
 
-// import App from "./App";
-// ReactDOM.render(<App />, document.getElementById('root'));
+import App from "./App";
+ReactDOM.render(<App />, document.getElementById('root'));
 
-import ObjectivesApp from "./objectives/ObjectivesApp"
-ReactDOM.render(<ObjectivesApp />, document.getElementById('root'));
+// import ObjectivesApp from "./objectives/ObjectivesApp"
+// ReactDOM.render(<ObjectivesApp />, document.getElementById('root'));

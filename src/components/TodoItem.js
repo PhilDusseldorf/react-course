@@ -3,9 +3,10 @@ import './TodoItem.css';
 
 class TodoItem extends Component {
     render() {
+
         return(
             <div className="todo-label">
-                <label >
+                <label style = {{color: this.props.item.completed ? "#fff" : "#000"}} >
                     <input 
                         type="checkbox"
                         checked={this.props.item.completed}

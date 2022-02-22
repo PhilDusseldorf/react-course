@@ -136,9 +136,6 @@ export default ObjectivesApp;
     }
 
      render() {
-
-        
-
         return (
             <div>
                 <h1>You are logged {this.state.isLoggedIn ? "in" : "out"}.</h1>
