@@ -92,7 +92,6 @@ export default ObjectivesApp;
   */
 
 /* Second Task: Fix it and make it work
- */
 import React, {Component} from "react";
 
 class ObjectivesApp extends Component {
@@ -113,3 +112,42 @@ class ObjectivesApp extends Component {
 }
 
 export default ObjectivesApp;
+ */
+
+ /* Objective 6: 
+ */
+
+ import React, {Component} from 'react';
+
+ class ObjectivesApp extends Component {
+     constructor() {
+        super();
+        this.state = {
+            isLoggedIn: false
+        };
+        this.handleClick = this.handleClick.bind(this);
+     }
+
+     handleClick() {
+        this.setState(prevState => {
+            // console.log("Clicked!!!");
+            return {isLoggedIn: !prevState.isLoggedIn}
+        });
+    }
+
+     render() {
+
+        
+
+        return (
+            <div>
+                <h1>You are logged {this.state.isLoggedIn ? "in" : "out"}.</h1>
+                <button onClick={this.handleClick}>
+                    {this.state.isLoggedIn ? "Log out" : "Log in"}
+                </button>
+            </div>
+        )
+     }
+ }
+
+ export default ObjectivesApp;

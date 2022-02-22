@@ -115,11 +115,20 @@ Use standard index.js with the ObjectivesApp above
 2. repair another funcion and make it into a class
  */
 
+/* Objective 7: CONDITIONAL RENDERING
+1. add state to a stateless functional component
+2. have state keep track of if the user is logged in
+3. add a button that logs the user in/out
+4. change the button's text to "log in" or "log out" depending on state
+5. render text that states if logged in or not
+
+*/
+
 import React from "react";
 import ReactDOM from "react-dom";
 
-import App from "./App";
-ReactDOM.render(<App />, document.getElementById('root'));
+// import App from "./App";
+// ReactDOM.render(<App />, document.getElementById('root'));
 
-// import ObjectivesApp from "./objectives/ObjectivesApp"
-// ReactDOM.render(<ObjectivesApp />, document.getElementById('root'));
+import ObjectivesApp from "./objectives/ObjectivesApp"
+ReactDOM.render(<ObjectivesApp />, document.getElementById('root'));
