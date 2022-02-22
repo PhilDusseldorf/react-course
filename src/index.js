@@ -110,6 +110,11 @@ Use standard index.js with the ObjectivesApp above
 2. repair another funcion and make it into a class
  */
 
+/* Todo App Part 6: STATE
+1. make the checkbox change state from complete to incomplete by click
+2. repair another funcion and make it into a class
+ */
+
 import React from "react";
 import ReactDOM from "react-dom";
 

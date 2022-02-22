@@ -94,11 +94,27 @@ class App extends Component {
         super();
         this.state = {
             todos: todoData
-        }
+        };
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(id) {
+        //console.log("changed ", id);
+        this.setState(prevState => {
+            const updatedTodos = prevState.todos.map(todo => {
+                if (todo.id === id) {
+                    todo.completed = !todo.completed;
+                }
+                return todo
+            })
+            return {
+                todos: updatedTodos
+            }
+        });
     }
     
     render() {
-        const todoArray = this.state.todos.map(data => <TodoItem key={data.id} item={data} />);
+        const todoArray = this.state.todos.map(data => <TodoItem key={data.id} item={data} handleChange={this.handleChange} />);
 
         return (
             <div className="d-flex">

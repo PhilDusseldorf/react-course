@@ -91,7 +91,7 @@ class ObjectivesApp extends Component {
 export default ObjectivesApp;
   */
 
-/* Second Task: Ix it and make it work
+/* Second Task: Fix it and make it work
  */
 import React, {Component} from "react";
 
